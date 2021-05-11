@@ -18,6 +18,8 @@ if( isset($_POST["login"]) ) {
 		// cek password
 		$row = mysqli_fetch_assoc($result);
 		if( password_verify($password, $row["pass"]) ) {
+			session_start();
+			$_SESSION['username']=$user;
 			header("Location: tabel.php");
 			exit;
 		}
