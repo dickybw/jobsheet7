@@ -1,4 +1,14 @@
 <?php 
+session_start();
+//jika tidak ada session username maka akan dilarikan ke halaman index.php
+if (empty($_SESSION['username'])) {
+    header('location:index.php');
+}
+if (isset($_POST['logout'])) {
+    session_destroy();
+    header('location:index.php');
+}
+
 $link = mysqli_connect(
     'localhost',
     'user_peternakan',
