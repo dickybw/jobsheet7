@@ -11,7 +11,7 @@ bahkan ga ada tulisan error di phpnya cuma mesti masukin username entah salah at
 itu databasenya udah tak export format sql
 trus itu bikin user account sek di phpmyadmin
 ini detailnya pokoe cuma bisa akses di databse peternakan_ayam.
-haruse anda pahama di bawah ini urutane apa aja
+haruse anda paham di sebelah ini urutane apa aja
     'localhost',
     'user_peternakan',
     '#user_peternakan#',
